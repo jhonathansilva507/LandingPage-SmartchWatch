@@ -3,7 +3,7 @@ import heroIMG from "../assets/img/hero.jpg";
 export default function Hero() {
   return (
     <section>
-      <div className="font-contrast flex items-center justify-between container mx-auto pt-2">
+      <div className="container mx-auto flex items-center justify-between pt-2">
         <div>
           <h1 className="font-bold text-7xl">
             Smart Watch <br />
