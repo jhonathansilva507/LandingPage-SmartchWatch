@@ -12,7 +12,7 @@ export default function Hero() {
           <span className="text-xl font-contrast">Garmin</span>
         </div>
         <div>
-          <img src={heroIMG} alt="Smart Watch" className="w-2xl" />
+          <img src={heroIMG} alt="Smart Watch" className="max-w-2xl" />
         </div>
       </div>
     </section>
