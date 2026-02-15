@@ -1,4 +1,4 @@
-import heroIMG from "../assets/img/hero.jpg";
+import heroIMG from "../assets/img/hero.png";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
           <img
             src={heroIMG}
             alt="Smart Watch"
-            className="w-80 md:w-sm lg:w-xl"
+            className="w-80 md:w-sm lg:w-2xl my-5"
           />
         </div>
       </div>
