@@ -15,7 +15,7 @@ export default function Hero() {
           <img
             src={heroIMG}
             alt="Smart Watch"
-            className="w-64 md:w-sm lg:w-xl"
+            className="w-80 md:w-sm lg:w-xl"
           />
         </div>
       </div>
