@@ -51,6 +51,9 @@ export default function Features() {
   return (
     <section>
       <div className="container m-auto">
+        <h2 className="mx-auto my-10 font-semibold text-4xl text-center bg-linear-to-t from-green-500 to-green-100 bg-clip-text text-transparent">
+          Diversas funcionalidades para seu treino
+        </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 m-auto w-full px-8 py-5">
           {features.map((feature, index) => (
             <FeatureCard {...feature} key={index} />

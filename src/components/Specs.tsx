@@ -36,10 +36,13 @@ export default function Specs() {
   return (
     <section>
       <div className="container m-auto flex flex-col items-center">
-        <div className="flex justify-center">
+        <h2 className="mx-auto mt-10 font-medium text-2xl">
+          Outras espepcificações
+        </h2>
+        <div className="flex justify-center ">
           <img src={detailPNG} className="w-4xl" />
         </div>
-        <div className="flex justify-center gap-16">
+        <div className="flex justify-center gap-16 mb-8">
           <div className="bg-gray-100 p-4 rounded-3xl shadow-lg w-lg">
             {physicalSpecs.map((physicSpec, physicIndex) => (
               <div key={physicIndex} className="flex gap-1 mb-1.5">
@@ -59,7 +62,7 @@ export default function Specs() {
           </div>
         </div>
 
-        <h2 className="mx-auto mt-8 font-semibold text-2xl">
+        <h2 className="mx-auto my-10 font-semibold text-2xl">
           Esoclha a cor que mais combina com você
         </h2>
         <div className="">
@@ -77,11 +80,15 @@ export default function Specs() {
               className="cursor-pointer m-1.5"
             >
               <div
-                className={`w-8 h-8 ${color.colorClass} rounded-full transition-all duration-300 border-4 ${color.name === selectionColor ? "border-amber-400 scale-110" : "border-gray-300"}`}
+                className={`w-8 h-8 ${color.colorClass} rounded-full transition-all duration-300 border-4 ${color.name === selectionColor ? "border-amber-400 scale-110" : "border-gray-600"}`}
               />
             </button>
           ))}
         </div>
+
+        <button className="my-8 text-xl bg-linear-to-tr from-cyan-500 to-green-400 via-blue-400 p-2.5 rounded-full text-white font-medium cursor-pointer hover:scale-105 transition-all duration-300 shadow-md">
+          Garanta o seu agora
+        </button>
       </div>
     </section>
   );
