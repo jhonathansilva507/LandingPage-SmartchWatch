@@ -1,3 +1,9 @@
+import { useState } from "react";
+
+import whiteIMG from "../assets/img/hero.png";
+import grayIMG from "../assets/img/img-color-gray.png";
+import cyaIMG from "../assets/img/img-color-cyan.png";
+import blackIMG from "../assets/img/img-color-black.png";
 import detailPNG from "../assets/img/img-detail1.png";
 
 export default function Specs() {
@@ -19,13 +25,20 @@ export default function Specs() {
     { label: "Compatibilidade: ", value: "Android e IOS" },
     { label: "Resolução de vídeo: ", value: "208 x 2208 px" },
   ];
+  const colors = [
+    { name: "white", img: whiteIMG, colorClass: "bg-white" },
+    { name: "gray", img: grayIMG, colorClass: "bg-gray-400" },
+    { name: "cyan", img: cyaIMG, colorClass: "bg-cyan-200" },
+    { name: "black", img: blackIMG, colorClass: "bg-gray-800" },
+  ];
+
+  const [selectionColor, setSelecitonColor] = useState("white");
   return (
     <section>
       <div className="container m-auto">
         <div className="flex justify-center">
           <img src={detailPNG} className="w-4xl" />
         </div>
-
         <div className="flex justify-center gap-16">
           <div className="bg-gray-100 p-4 rounded-3xl shadow-lg w-lg">
             {physicalSpecs.map((physicSpec, physicIndex) => (
@@ -44,6 +57,27 @@ export default function Specs() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div>
+          <img
+            src={`${colors.find((color) => color.name === selectionColor)?.img}`}
+            className=""
+          />
+        </div>
+
+        <div className="m-auto">
+          {colors.map((color) => (
+            <button
+              key={color.name}
+              onClick={() => setSelecitonColor(color.name)}
+              className="cursor-pointer m-1.5"
+            >
+              <div
+                className={`w-8 h-8 ${color.colorClass} rounded-full border-gray-600 border-4`}
+              />
+            </button>
+          ))}
         </div>
       </div>
     </section>
