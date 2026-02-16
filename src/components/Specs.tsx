@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import whiteIMG from "../assets/img/hero.png";
+import whiteIMG from "../assets/img/img-color-white.png";
 import grayIMG from "../assets/img/img-color-gray.png";
 import cyaIMG from "../assets/img/img-color-cyan.png";
 import blackIMG from "../assets/img/img-color-black.png";
@@ -27,7 +27,7 @@ export default function Specs() {
   ];
   const colors = [
     { name: "white", img: whiteIMG, colorClass: "bg-white" },
-    { name: "gray", img: grayIMG, colorClass: "bg-gray-400" },
+    { name: "gray", img: grayIMG, colorClass: "bg-gray-500" },
     { name: "cyan", img: cyaIMG, colorClass: "bg-cyan-200" },
     { name: "black", img: blackIMG, colorClass: "bg-gray-800" },
   ];
@@ -35,7 +35,7 @@ export default function Specs() {
   const [selectionColor, setSelecitonColor] = useState("white");
   return (
     <section>
-      <div className="container m-auto">
+      <div className="container m-auto flex flex-col items-center">
         <div className="flex justify-center">
           <img src={detailPNG} className="w-4xl" />
         </div>
@@ -59,14 +59,17 @@ export default function Specs() {
           </div>
         </div>
 
-        <div>
+        <h2 className="mx-auto mt-8 font-semibold text-2xl">
+          Esoclha a cor que mais combina com você
+        </h2>
+        <div className="">
           <img
             src={`${colors.find((color) => color.name === selectionColor)?.img}`}
             className=""
           />
         </div>
 
-        <div className="m-auto">
+        <div className="m-auto flex justify-center">
           {colors.map((color) => (
             <button
               key={color.name}
@@ -74,7 +77,7 @@ export default function Specs() {
               className="cursor-pointer m-1.5"
             >
               <div
-                className={`w-8 h-8 ${color.colorClass} rounded-full border-gray-600 border-4`}
+                className={`w-8 h-8 ${color.colorClass} rounded-full transition-all duration-300 border-4 ${color.name === selectionColor ? "border-amber-400 scale-110" : "border-gray-300"}`}
               />
             </button>
           ))}
