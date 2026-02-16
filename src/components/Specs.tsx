@@ -4,7 +4,7 @@ import whiteIMG from "../assets/img/img-color-white.png";
 import grayIMG from "../assets/img/img-color-gray.png";
 import cyaIMG from "../assets/img/img-color-cyan.png";
 import blackIMG from "../assets/img/img-color-black.png";
-import detailPNG from "../assets/img/img-detail1.png";
+import detailPNG from "../assets/img/img-detail.png";
 
 export default function Specs() {
   const physicalSpecs = [
@@ -34,15 +34,15 @@ export default function Specs() {
 
   const [selectionColor, setSelecitonColor] = useState("white");
   return (
-    <section>
+    <section id="specs" className="scroll-mt-20">
       <div className="container m-auto flex flex-col items-center">
         <h2 className="mx-auto mt-10 font-medium text-2xl">
           Outras espepcificações
         </h2>
-        <div className="flex justify-center ">
+        <div className="flex justify-center my-16">
           <img src={detailPNG} className="w-4xl" />
         </div>
-        <div className="flex justify-center gap-16 mb-8">
+        <div className="flex justify-center gap-16 mb-16">
           <div className="bg-gray-100 p-4 rounded-3xl shadow-lg w-lg">
             {physicalSpecs.map((physicSpec, physicIndex) => (
               <div key={physicIndex} className="flex gap-1 mb-1.5">
@@ -62,7 +62,7 @@ export default function Specs() {
           </div>
         </div>
 
-        <h2 className="mx-auto my-10 font-semibold text-2xl">
+        <h2 className="mx-auto my-10 font-semibold text-2xl bg-linear-to-r from-cyan-500 via-yellow-400 to-green-500 bg-clip-text text-transparent">
           Esoclha a cor que mais combina com você
         </h2>
         <div className="">

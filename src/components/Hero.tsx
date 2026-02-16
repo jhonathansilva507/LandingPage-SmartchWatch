@@ -2,7 +2,7 @@ import heroIMG from "../assets/img/hero.png";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="hero" className="scroll-mt-20">
       <div className="container mx-auto flex items-center justify-between pt-2 flex-col md:flex-row">
         <div className="text-center my-4 md:text-start">
           <h1 className="font-bold text-3xl md:text-5xl lg:text-7xl">

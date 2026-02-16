@@ -49,7 +49,7 @@ export default function Features() {
     },
   ];
   return (
-    <section>
+    <section id="features" className="scroll-mt-20">
       <div className="container m-auto">
         <h2 className="mx-auto my-10 font-semibold text-4xl text-center bg-linear-to-t from-green-500 to-green-100 bg-clip-text text-transparent">
           Diversas funcionalidades para seu treino
