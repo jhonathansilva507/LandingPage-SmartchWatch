@@ -13,9 +13,9 @@ export default function Features() {
       icon: "fa-solid fa-stopwatch",
     },
     {
-      title: "TEMPO DE CORRIDA",
-      text: "Precisa de alguma orientação que o ajude a cumprir o seu objetivo? Selecione uma distância para a sua corrida e verá um display de dados que apresenta o tempo de corrida estimado.",
-      icon: "fa-regular fa-clock",
+      title: "EXERCÍCIO DIÁRIO SUGERIDO",
+      text: "Para orientações de treino personalizadas, obtenha recomendações de corridas diárias de várias intensidades com base no seu histórico de treino, nível de condição física e tempo de recuperação.",
+      icon: "fa-solid fa-person-running",
     },
     {
       title: "PREVISÃO DE COMPETIÇÃO",
@@ -23,9 +23,9 @@ export default function Features() {
       icon: "fa-solid fa-trophy",
     },
     {
-      title: "GARMIN COACH",
-      text: "Estes planos de treino adaptáveis incluem orientações de treinadores especialistas e planos de treino gratuitos que se adaptam a você e aos seus objetivos. Os exercícios são sincronizados diretamente com o relógio a partir do app. Garmin Connect",
-      icon: "fa-solid fa-person-running",
+      title: "TEMPO DE CORRIDA",
+      text: "Precisa de alguma orientação que o ajude a cumprir o seu objetivo? Selecione uma distância para a sua corrida e verá um display de dados que apresenta o tempo de corrida estimado.",
+      icon: "fa-regular fa-clock",
     },
     {
       title: "ASSISTÊNCIA DE RECUPERAÇÃO",
@@ -43,9 +43,9 @@ export default function Features() {
       icon: "fa-solid fa-dumbbell",
     },
     {
-      title: "MONITORAMENTO DE ENERGIA BODY BATTERY",
-      text: "Mantenha os níveis de energia do seu corpo para que possa encontrar os melhores momentos do dia para atividade e para descanso.",
-      icon: "fa-solid fa-battery-three-quarters",
+      title: "GARMIN COACH",
+      text: "Estes planos de treino adaptáveis incluem orientações de treinadores especialistas e planos de treino gratuitos que se adaptam a você e aos seus objetivos. Os exercícios são sincronizados diretamente com o relógio a partir do app. Garmin Connect",
+      icon: "fa-solid fa-chalkboard-user",
     },
   ];
   return (

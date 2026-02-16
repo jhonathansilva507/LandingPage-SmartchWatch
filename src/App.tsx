@@ -1,8 +1,8 @@
 import Description from "./components/Description";
-import Details from "./components/Details";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Specs from "./components/Specs";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <Hero />
         <Description />
         <Features />
-        <Details />
+        <Specs />
       </main>
     </div>
   );
