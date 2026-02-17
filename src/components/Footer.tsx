@@ -54,9 +54,9 @@ export default function Footer() {
       <div className="container m-auto flex flex-col items-center justify-start">
         <h3 className="font-bold mb-4 text-2xl">GARMIN</h3>
         <hr className="w-full border-gray-400 border-px" />
-        <div className="w-full flex items-start justify-between">
+        <div className="w-full m-auto flex flex-col lg:flex-row items-start justify-center lg:justify-between text-center lg:text-start">
           {footerSecitons.map((section, index) => (
-            <div key={index}>
+            <div key={index} className="m-auto">
               <h3 className="font-semibold text-2xl my-4">{section.title}</h3>
               <ul>
                 {section.links.map((link, indexLink) => (

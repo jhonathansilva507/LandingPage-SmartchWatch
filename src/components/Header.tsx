@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="flex justify-center w-full p-6 sticky shadow-md top-0 left-0 right-0 z-20 bg-white">
+    <header className="flex justify-center w-screen p-6 sticky shadow-md top-0 left-0 right-0 z-20 bg-white">
       <nav className="w-md flex justify-between items-center font-medium">
         <a href="#hero" className="hover:scale-110 transition-all duration-300">
           Início

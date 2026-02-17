@@ -1,5 +1,5 @@
 // import descriptionSVG from "../assets/img/Smartwatch-amico.svg";
-import descriptionPNG from "../assets/img/img-detail2.png";
+import descriptionPNG from "../assets/img/img-detail.png";
 
 export default function Description() {
   return (
